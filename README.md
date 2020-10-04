@@ -42,5 +42,10 @@ The additional analysis shows that:
     - Arapahoe county received 6.7% of the votes numbering 24,801 in total
 - The county with the highest turnout was:
     - Denver county with 82.8% of the votes and 306,055 number of votes
-    
+
 ![alt text](Resources/election_results.png)
+
+The program can be altered to include an input function to allow candidate names, county, dates (providing a date function is included), etc to be changed for any election data to be processed. As long as the data is correctly formatted the program can analyze information for any election. A date field would need to be included in the dataset.
+
+Example script for the input:
+candidate = input("Which candidate are you looking for? ")
