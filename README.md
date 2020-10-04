@@ -1,7 +1,7 @@
 # Election Analysis with Python
 
 ## Overview of Project
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee has given me the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
@@ -28,5 +28,17 @@ The analysis of the election show that:
     - Diana DeGette who received 73.8% of the vote and 72,892 number of votes
 
 ## Challenge Overview
+The Election Commission has requested the following additional tasks to complete the audit.
+
+1. Determine the voter turnout for each county
+2. Calculate the percentage of votes from each county out of the total count.
+3. Determine the county with the highest turnout
 
 ## Challenge Summary
+The additional analysis shows that:
+- The county vote turnout results:
+    - Jefferson county received 10.5% of the votes with 38,855 number of votes
+    - Denver county received 82.8% of the votes with 306,055 number of votes
+    - Arapahoe county received 6.7% of the votes with 24,801 number of votes
+- The county with the highest turnout was:
+    - Denver county with 82.8% of the votes and 306,055 number of votes
