@@ -8,12 +8,12 @@ import csv
 import os
 
 # Add a variable to load a file from a path.
-#file_to_load = os.path.join("../Resources/election_results.csv")
-file_to_load = "/Users/ROR/Desktop/ucb_data_analytics/module3_pypoll_python/Election_Analysis/Resources/election_results.csv"
+file_to_load = os.path.join("Resources", "election_results.csv")
+#file_to_load = "/Users/ROR/Desktop/ucb_data_analytics/module3_pypoll_python/Election_Analysis/Resources/election_results.csv"
 
 # Add a variable to save the file to a path.
-#file_to_save = os.path.join("analysis", "election_analysis.txt")
-file_to_save = "/Users/ROR/Desktop/ucb_data_analytics/module3_pypoll_python/Election_Analysis/analysis/election_analysis.txt"
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+#file_to_save = "/Users/ROR/Desktop/ucb_data_analytics/module3_pypoll_python/Election_Analysis/analysis/election_analysis.txt"
 
 # Step 1:
 # Initialize a total vote counter.
@@ -80,7 +80,7 @@ with open(file_to_load) as election_data:
             counties_vote_dict[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-        counties_vote_dict[county_name] += 1   
+        counties_vote_dict[county_name] += 1
 
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
@@ -100,7 +100,7 @@ with open(file_to_save, "w") as txt_file:
     for countyName in counties_vote_dict:
         # 6b: Retrieve the county vote count.
         county_votes = counties_vote_dict[countyName]
-        
+
         # 6c: Calculate the percent of total votes for the county.
         county_vote_percentage = float(county_votes) / float(total_votes) * 100
 
@@ -111,7 +111,7 @@ with open(file_to_save, "w") as txt_file:
 
         # 6e: Save the county votes to a text file.
         txt_file.write(county_results)
-        
+
         # 6f: Write a decision statement to determine the winning county and get its vote count.
         if(county_votes > county_voter_turnout):
             largest_county_turnout = countyName
@@ -139,7 +139,7 @@ with open(file_to_save, "w") as txt_file:
         # Print each candidate's voter count and percentage to the
         # terminal.
         print(candidate_results)
-        
+
         #  Save the candidate results to our text file.
         txt_file.write(candidate_results)
 
